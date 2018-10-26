@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <com.example.zhbj.View.TopNewsViewPager
+            android:id="@+id/vp_top_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.example.zhbj.View.TopNewsViewPager>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#a000"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title"
+                android:textColor="#fff"
+
+                android:textSize="16sp"/>
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/magic_indicator1"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
